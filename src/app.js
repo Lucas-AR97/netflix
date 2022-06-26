@@ -1,11 +1,15 @@
 import React from 'react'
-import { render } from 'react-dom'
-import 'normalize.css'
-import { App } from './app'
+import jumboData from './fixtures/jumbo'
+import Jumbotron from './components/jumbotron'
 
-render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+export default function App () {
+  return (
+    <Jumbotron.Container>
+      {jumboData.map((item) => (
+        <Jumbotron key={item.id} direction={item.direction}>
+          <p>Hello</p>
+        </Jumbotron>
+      ))}
+    </Jumbotron.Container>
+  )
+}

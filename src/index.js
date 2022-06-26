@@ -1,6 +1,12 @@
-import { render } from '@testing-library/react'
 import React from 'react'
+import { render } from 'react-dom'
+import 'normalize.css'
+import { App } from './app'
 
-import App from './app'
+render(
+  <React.StrictMode>
+    <App />
 
-render(<App />, document.getElementById('root'))
+  </React.StrictMode>,
+  document.getElementById('root')
+)
