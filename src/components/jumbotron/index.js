@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Container, Item, Inner, Pane, Title, SubTitle, Image } from './styles/jumbotron'
 
